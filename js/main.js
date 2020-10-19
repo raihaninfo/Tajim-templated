@@ -4,4 +4,16 @@ $(document).ready(function(){
         autoplay: true,
         autoplayTimeout: 5000,
     });
+
+    $(window).on('scroll',function() {    
+        var scroll = $(window).scrollTop();
+        if (scroll < 30) {
+         $("#sticky-header").removeClass("sticky");
+        }else{
+         $("#sticky-header").addClass("sticky");
+        }
+     });
+
+
+
   });

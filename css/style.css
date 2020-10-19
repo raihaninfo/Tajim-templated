@@ -25,14 +25,39 @@
     text-align: center;
 
 }
+
+#sticky-header.sticky {
+    width: 100%;
+    color: white;
+    background-color: #11125b;
+}
+
+
 /* .team-conten{
     margin-top: 50px;
     position: absolute;
     left: 13%;
 } */
+
 .team{
     background-image: url(/images/hero.png);
     text-align: center;
+}
+
+.video-bg{
+    position: relative;
+}
+
+.play-btn{
+    -webkit-filter: invert(100%); /* Safari/Chrome */
+     filter: invert(100%); 
+    width: 50px;
+    position: absolute ;
+    top: 45%;
+    left: 45%;
+    cursor: pointer;
+    transition: 0.5s;
+
 }
 
 
@@ -62,14 +87,15 @@
     right: -60px;
 }
 #carouselExampleIndicators .carousel-indicators {
-    right: 50%;
-    top: auto;
-    bottom: 0px;
-    margin-right: -19px;
+    /* right: 50%; */
+     top: auto;
+    /* bottom: 0px;
+    margin-right: -19px; */
 }
 #carouselExampleIndicators .carousel-indicators li {
-    width: 30px;
-    height: 30px;
+    background-image: url(https://s3.amazonaws.com/uifaces/faces/twitter/rssems/128.jpg);
+    width: 20px;
+    height: 20px;
     margin: 5px;
     cursor: pointer;
     border: 4px solid #CCC;
@@ -79,9 +105,10 @@
     transition: all 0.4s;
 }
 #carouselExampleIndicators .carousel-indicators .active {
-    background: #333333;
-    width: 70px;
-    height: 70px;
+    background-image: url(https://s3.amazonaws.com/uifaces/faces/twitter/brad_frost/128.jpg);
+    /* background: #333333; */
+    width: 60px;
+    height: 60px;
     border-radius: 100px;
     border-color: #f33;
     opacity: 1;

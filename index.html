@@ -11,22 +11,26 @@
   <link rel="stylesheet" href="css/owl.carousel.min.css">
   <link rel="stylesheet" href="css/owl.theme.default.min.css">
   <link href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-  <!-- <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css"> -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
+  <link href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
   <link rel="stylesheet" href="css/style.css">
   <title>Tajem Web template</title>
 </head>
 
 <body>
   <!-- navbar start  -->
-  <div class="container fixed-top">
-    <nav class="navbar navbar-expand-lg navbar-light text-white ">
+  <header id="sticky-header" class="fixed-top">
+  <div class="container " style="width: 100%;">
+    <nav id="" class="navbar navbar-expand-lg navbar-light text-white ">
       <a class="navbar-brand" href="#"><img class="img-fluid" src="images/logu.png" alt=""></a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-    
+
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav text-white ml-5 mt-4 pl-5">
+        <ul class="navbar-nav text-white ml-auto pl-5">
           <li class="nav-item active">
             <a class="nav-link text-white" href="#">HOME<span class="sr-only">(current)</span></a>
           </li>
@@ -40,7 +44,7 @@
             <a class="nav-link text-white" href="#">TEAMS <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item active">
-            <a class="nav-link text-white" href="#">WORKS  <span class="sr-only">(current)</span></a>
+            <a class="nav-link text-white" href="#">WORKS <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item active">
             <a class="nav-link text-white" href="#">PEOPLE SAY <span class="sr-only">(current)</span></a>
@@ -52,6 +56,7 @@
       </div>
     </nav>
   </div>
+</header>
   <!-- navbar end  -->
   <!-- slider section stard  -->
   <div class="owl-carousel owl-theme">
@@ -126,9 +131,9 @@
   </div>
   <!-- slider section end -->
   <!-- our story section start -->
-  <div class="container my-4">
+  <div class="container my-5">
     <div class="row">
-      <div class="col-md-6">
+      <div class="col-md-5">
         <img class="img-fluid" src="images/about-us-logo.png" alt="">
       </div>
       <div class="col-md-6">
@@ -146,15 +151,33 @@
   <!-- our story section end -->
 
 
-  <!-- video section  -->
-  <!-- video section  -->
-
-
-
-
+  <!-- video sectio  -->
+  <div class="container-fluid position-relative">
+    <img class="img-fluid video-bg" src="images/video-section.png" alt="">
+    <img class="img-fluid play-btn " src="images/play-button.png" alt="" data-toggle="modal"
+      data-target=".bd-example-modal-lg">
+    <!--Modal-->
+    <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+          <button type="button" class="close text-right" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <!-- youtube video  -->
+          <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/07d2dXHYb94?controls=0&amp;start=20" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <!-- youtube video  -->
+          <!-- <video width=100% controls autoplay loop>
+            <source src="our_story.mp4" type="video/mp4">
+          </video> -->
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- video sectio  -->
 
   <!-- EXPERTISE section start  -->
-  <div class="container">
+  <div class="container my-5">
     <div class="row">
       <div class="col-12">
         <h4 class="h4 text-center">EXPERTISE</h4>
@@ -164,21 +187,21 @@
 
     <!-- item -->
     <div class="row">
-      <div class="col-md-4 my-4 ">
+      <div class="col-md-4 my-4 border-right border-bottom ">
         <img src="images/icons/web_Design_icon.png" alt="" class="mx-auto d-block">
         <h5 class="h5 text-center font-weight-bold my-2">WEB DESIGN & DEVELOPMENT</h5>
         <p class="text-center">This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet
           Aenean.</p>
       </div>
 
-      <div class="col-md-4 my-4 ">
+      <div class="col-md-4 my-4 border-bottom border-right">
         <img src="images/icons/branding_identity_logo.png" alt="" class="mx-auto d-block">
         <h5 class="h5 text-center font-weight-bold my-2">BRANDING IDENTITY</h5>
         <p class="text-center">This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet
           Aenean.</p>
       </div>
 
-      <div class="col-md-4 my-4 ">
+      <div class="col-md-4 my-4 border-bottom ">
         <img src="images/icons/mobile_app_icon.png" alt="" class="mx-auto d-block">
         <h5 class="h5 text-center font-weight-bold my-2">MOBILE APP</h5>
         <p class="text-center">This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet
@@ -187,14 +210,14 @@
     </div>
     <!-- item line two  -->
     <div class="row">
-      <div class="col-md-4 my-4 ">
+      <div class="col-md-4  border-right ">
         <img src="images/icons/search_engine_icon.png" alt="" class="mx-auto d-block">
         <h5 class="h5 text-center font-weight-bold my-2">SEARCH ENGINE OPTIMIZATION</h5>
         <p class="text-center">This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet
           Aenean.</p>
       </div>
 
-      <div class="col-md-4 my-4 ">
+      <div class="col-md-4 border-right ">
         <img src="images/icons/game_development_icon.png" alt="" class="mx-auto d-block">
         <h5 class="h5 text-center font-weight-bold my-2">GAME DEVELOPMENT</h5>
         <p class="text-center">This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet
@@ -214,7 +237,7 @@
   <!-- EXPERTISE section end -->
 
   <!-- MEET OUR AMAZING TEAM start  -->
-  <div class="container-fluid team">
+  <div class="container-fluid team" style="background-image: url(images/hero.png);">
     <div class="container">
       <div class="row text-white">
         <div class="col-md-12 mt-5">
@@ -264,7 +287,7 @@
       <div class="row text-center d-block m-auto">
         <p class=" text-white mt-5">Become part of our dream team, let’s join us ! </p>
 
-        <button class="btn btn-outline-primary mb-4"> WE ARE HIRING</button>
+        <button class="btn btn-outline-primary mb-5"> WE ARE HIRING</button>
       </div>
     </div>
   </div>
@@ -282,46 +305,46 @@
     </div>
   </div>
   <!-- gallary section images  -->
-  <div class="container-fluid justify-content-center">
-    <div class="row d-flex  align-items-center ">
+  <div class="container-fluid">
+    <div class="row d-flex m-auto  align-items-center ">
       <div class="align-items-center col-md-2 col">
-        <img class="img-fluid align-items-center" src="images/gellery-1.jpg" alt="">
+        <img class="img-fluid align-items-center" src="images/img-1.png" alt="">
       </div>
       <div class="col-md-2">
-        <img class="img-fluid" src="images/gellery-6.jpg" alt="">
+        <img class="img-fluid" src="images/img-2.png" alt="">
       </div>
       <div class="col-md-2">
-        <img class="img-fluid" src="images/gellery-2.jpg" alt="">
+        <img class="img-fluid" src="images/img-3.png" alt="">
       </div>
       <div class="col-md-2">
-        <img class="img-fluid" src="images/gellery-6.jpg" alt="">
+        <img class="img-fluid" src="images/img-1.png" alt="">
       </div>
       <div class="col-md-2">
-        <img class="img-fluid" src="images/gellery-2.jpg" alt="">
+        <img class="img-fluid" src="images/img-3.png" alt="">
       </div>
       <div class="col-md-2">
         <img class="img-fluid" src="images/gellery-6.jpg" alt="">
       </div>
     </div>
 
-    <div class="row d-flex mt-2 align-items-center ">
+    <div class="row d-flex m-auto  align-items-center ">
       <div class="align-items-center col-md-2 col">
-        <img class="img-fluid align-items-center" src="images/gellery-1.jpg" alt="">
+        <img class="img-fluid align-items-center" src="images/img-2.png" alt="">
       </div>
       <div class="col-md-2">
         <img class="img-fluid" src="images/gellery-6.jpg" alt="">
       </div>
       <div class="col-md-2">
-        <img class="img-fluid" src="images/gellery-2.jpg" alt="">
+        <img class="img-fluid" src="images/img-1.png" alt="">
       </div>
       <div class="col-md-2">
         <img class="img-fluid" src="images/gellery-6.jpg" alt="">
       </div>
       <div class="col-md-2">
-        <img class="img-fluid" src="images/gellery-2.jpg" alt="">
+        <img class="img-fluid" src="images/img-2.png" alt="">
       </div>
       <div class="col-md-2">
-        <img class="img-fluid" src="images/gellery-6.jpg" alt="">
+        <img class="img-fluid" src="images/img-1.png" alt="">
       </div>
     </div>
   </div>
@@ -334,71 +357,76 @@
   <!-- gallary section end -->
 
   <!-- testimonial section  -->
-  <div class="container-fluid team">
-    <div class="container text-white my-5">
-      <div id="carouselExampleIndicators" id="quote-carousel" class="carousel slide" data-ride="carousel">
-        <!-- <ol class="carousel-indicators">
-          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-        </ol> -->
-        <ol class="carousel-indicators">
-          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"><img class="img-responsive " src="https://s3.amazonaws.com/uifaces/faces/twitter/brad_frost/128.jpg" alt="">
-          </li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="1"><img class="img-responsive" src="https://s3.amazonaws.com/uifaces/faces/twitter/rssems/128.jpg" alt="">
-          </li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="2"><img class="img-responsive" src="https://s3.amazonaws.com/uifaces/faces/twitter/adellecharles/128.jpg" alt="">
-          </li>
-      </ol>
-        <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <div class="item active">
-                    <blockquote>
-                        <div class="row">
-                            <div class="col-sm-8 col-sm-offset-2">
-
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. !</p>
-                                <small>Someone famous</small>
-                            </div>
-                        </div>
-                    </blockquote>
-                </div>
-                </div>
-                <div class="carousel-item">
-                  <div class="item">
-                    <blockquote>
-                        <div class="row">
-                            <div class="col-sm-8 col-sm-offset-2">
-
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
-                                <small>Someone famous</small>
-                            </div>
-                        </div>
-                    </blockquote>
-                </div>
-                </div>
-                <div class="carousel-item">
-                  <div class="item">
-                    <blockquote>
-                        <div class="row">
-                            <div class="col-sm-8 col-sm-offset-2">
-
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. .</p>
-                                <small>Someone famous</small>
-                            </div>
-                        </div>
-                    </blockquote>
-                </div>
-                </div>
+  <div class="container-fluid" style="background-image: url(images/hero.png);">
+    <div class="container ">
+      <div class="container text-center text-white my-5">
+        <div id="carouselExampleIndicators" id="quote-carousel" class="carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active">
+              <img class="img-fluid "src="https://s3.amazonaws.com/uifaces/faces/twitter/brad_frost/128.jpg" alt="">
+            </li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1">
+              <img class="img-fluid"src="https://s3.amazonaws.com/uifaces/faces/twitter/rssems/128.jpg" alt="">
+            </li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2">
+              <img class="img-fluid"src="https://s3.amazonaws.com/uifaces/faces/twitter/adellecharles/128.jpg" alt="">
+            </li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="item active">
+                <blockquote>
+                  <div class="row my-5">
+                    <div class="col-md-6 m-auto d-block">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                        labori </p>
+                      <small>Someone famous</small>
+                    </div>
+                  </div>
+                </blockquote>
+              </div>
+            </div>
+            <div class="carousel-item ">
+              <div class="item">
+                <blockquote>
+                  <div class="row my-5">
+                    <div class="col-md-6 m-auto d-block">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                        laboris </p>
+                      <small>Someone famous</small>
+                    </div>
+                  </div>
+                </blockquote>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="item">
+                <blockquote>
+                  <div class="row my-5">
+                    <div class="col-md-6 m-auto d-block">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                        laboris</p>
+                      <small>Someone famous</small>
+                    </div>
+                  </div>
+                </blockquote>
+              </div>
+            </div>
+          </div>
+          <a class="carousel-control-prev carousel-control1" href="#carouselExampleIndicators" role="button"
+            data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next carousel-control1" href="#carouselExampleIndicators" role="button"
+            data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
         </div>
-        <a class="carousel-control-prev carousel-control1" href="#carouselExampleIndicators" role="button" data-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next carousel-control1" href="#carouselExampleIndicators" role="button" data-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
-        </a>
       </div>
     </div>
   </div>
@@ -413,11 +441,21 @@
           <h3 class="h3 text-center">GIVE US A GOOD NEWS</h3>
         </div>
         <div class="row">
-          <input type="text" class="form-control" placeholder="Name">
-          <input type="email" class="form-control mt-4" placeholder="Email">
-          <input type="text" class="form-control mt-4" placeholder="Subject">
-          <textarea name="" class="form-control mt-4"></textarea>
-          <button class="btn btn-outline-primary  mt-4 border border-primary">LEARN MORE</button>
+          <div class="input-group">
+            <input type="text" class="form-control" placeholder="Name">
+        </div>
+          <div class="input-group">
+            <input type="email" class="form-control mt-4" placeholder="Email">
+        </div>
+          <div class="input-group">
+            <input type="text" class="form-control mt-4" placeholder="Subject">
+        </div>
+          <div class="input-group">
+            <textarea name="" class="form-control mt-4"></textarea>
+        </div>
+          <div class="input-group">
+            <button class="btn btn-outline-primary  mt-4 border border-primary">SUBMIT</button>
+        </div>
         </div>
       </div>
       <!-- company  -->
@@ -465,11 +503,63 @@
             <img src="images/brand-logo-10.png" alt="">
           </div>
         </div>
-       
+
       </div>
     </div>
   </div>
   <!-- contack section end -->
+
+  <!-- footer section  -->
+  <footer class="container-fluid mt-5" style="background-image: url(images/footer_bg.jpg); no-repeat;">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <img class="pt-5 img-fluid" src="images/logu.png" alt="">
+          <p class=" text-white">lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh elit. Duis sed odio sit amet auctror a ornare odio non mauris vitae erat in elit</p>
+        </div>
+        <div class="col-md-4">
+          <h4 class="h4 pt-5 text-white text-center">OUR STUDIO</h4>
+          <p class=" text-center text-white"> <img src="images/icons/map-icon.png" alt=""> Ruko cucruk, Jl. Radio luar dalem jos No.12
+            <br> - 13, Kalideres - Jakarta Barat
+            <br>
+            11480 - Indonesia</p>
+            <p class=" text-white text-center"> <img src="images/icons/phone-icon.png" alt=""> (+62) 21-2224 3333</p>
+        </div>
+        <div class="col-md-4">
+          <h4 class="h4 text-center text-white pt-5">STAY IN TOUCH</h4>
+          <form action="">
+            <div class="input-group">
+
+            
+            <input class="form-control" placeholder="Subscribe our newsletter" type="text">
+            <img style="width: 60px;" class=" img-fluid  ml-1" src="images/icons/src-icon-.png" alt="">
+          </div>
+          </form>
+          <div class="m-2 ml-3">
+            <img src="images/icons/facebook-icon.png" alt="">
+            <img src="images/icons/twitter-icon-1.png" alt="">
+            <img src="images/icons/dribbble-icon-1.png" alt="">
+            <img src="images/icons/instagram-icon-1.png" alt="">
+            <img src="images/icons/gplus-icon-1.png" alt="">
+            <img src="images/icons/youtube-icon-1.png" alt="">
+          </div>
+
+        </div>
+      </div>
+      <div class="row mt-5 pt-5">
+        <div class="col-md-6 text-left">
+          <a class=" text-decoration-none text-white mr-4" href="#">HELP</a>
+          <a class=" text-decoration-none text-white mr-4" href="#">TERMS & CONDITION</a>
+          <a class=" text-decoration-none text-white mr-4" href="#">PRIVACY</a>
+        </div>
+        <div class="col-md-6">
+          <p class=" text-white text-right">Copyright &copy; 2020 - Tajem Creative</p>
+        </div>
+      </div>
+    </div>
+
+  </footer>
+  <!-- footer section  -->
 
   <!-- Optional JavaScript; choose one of the two! -->
 
